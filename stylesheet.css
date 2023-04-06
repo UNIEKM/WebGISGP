@@ -324,6 +324,73 @@ h6 { /* Heading - Main page Bold Paragraph Titles*/
 }
 /*End of linked images section on home page*/
 
+/*Alternate Pages CSS Start*/
+.topbox{
+	padding-right: 15%;
+	padding-left: 15%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	text-align: center;
+	font-size: 20px; 
+	font-family: Verdana, sans-serif;
+	color: #44444C;
+	background-color: #D6D6D6; 
+}
+.topbox2{
+	padding-right: 15%;
+	padding-left: 15%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	color: none;
+	background-color: none; 
+}
+.sectionbox{
+	background-color: #EBF5EE; /* background colour will be changed when colours are chosen */
+	padding-right: 15%;
+	padding-left: 15%;
+	padding-bottom: 5%;
+	padding-top: 5%;	
+}
+.sectionboxone{
+	display: flex; /* make it so the text boxes can stack if screen is smaller */
+	flex-direction: row;
+	background-color: white;
+	padding-right: 15%;
+	padding-left: 15%;
+	padding-bottom: 5%;
+	padding-top: 1%;	
+}
+.sectionboxtwo{
+	display: flex;
+	flex-direction: row;
+	background-color: #D6D6D6; /* background colour will be changed when colours are chosen */
+	padding-right: 15%;
+	padding-left: 15%;
+	padding-bottom: 1%;
+	padding-top: 0.5%;	
+}
+/* for other pages the quote box will be swapped for images that will be contained in the section boxes */
+.quotebox{
+	padding: 3px; /* quote box has different padding levels to make it left justified from center */
+	flex: 25%;
+	font-size: 25px; 
+	font-style: italic;
+	font-family: Verdana, sans-serif;
+	color: #18314F;
+	font-style: italic;
+	line-height: 155%;
+} 
+/* Paragraph/div formmating for the values page */
+.paragraphbox{
+	padding: 8px;
+	flex: 75%;
+	font-size: 20px; 
+	font-family: 'Segoe UI', Tahoma, Verdana, sans-serif, sans-serif; 
+	color: #44444C;
+	line-height: 155%; /* add spaces between rows of text for readability */
+}
+/*Alernate Pages CSS End*/
+
 
 /*Media Screen Start*/
 /* Responsive design for h1, .grid-container - shifts to a stacking arrangement when screen size passes limit */
