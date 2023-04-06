@@ -32,28 +32,52 @@
         <link rel="stylesheet" href="https://js.arcgis.com/4.25/esri/themes/light/main.css">
         <script src="https://js.arcgis.com/4.25/"></script>
 
-        <script>
-            require([
-                "esri/config", 
-                "esri/WebScene",
-                "esri/views/SceneView",
-                "esri/widgets/ScaleBar", 
-                "esri/widgets/Legend"
-            ], function(esriConfig, WebScene, SceneView, ScaleBar, Legend) {
-                // esriConfig.apiKey = "AAPK234ce7b4e1954f919830518702c1b12383vT0uTC0q38ag5wO4FBc_1kHQHBx8-8a7a6OZljrCrOoiG2Ho8wwmoz2-xu1vVc";
+ <script>
+  require([
+    "esri/config",
+    "esri/WebScene",
+    "esri/views/SceneView",
+    "esri/widgets/ScaleBar",
+    "esri/widgets/Legend"
+  ], function(esriConfig, WebScene, SceneView, ScaleBar, Legend) {
+    // esriConfig.apiKey = "AAPK234ce7b4e1954f919830518702c1b12383vT0uTC0q38ag5wO4FBc_1kHQHBx8-8a7a6OZljrCrOoiG2Ho8wwmoz2-xu1vVc";
 
-                const webscene = new WebScene({
-                    portalItem: {
-                        id: "cb5848b0a6a3458d988c6eaeff57c9c9"
-                    }
-                });
+    const webscene = new WebScene({
+      portalItem: {
+        id: "cb5848b0a6a3458d988c6eaeff57c9c9"
+      }
+    });
 
-                const view = new SceneView({
-                    container: "viewDiv",
-                    map: webscene
-                });
-            });
-        </script>
+    const view = new SceneView({
+      container: "viewDiv",
+      map: webscene
+    });
+
+    function loadExperienceBuilderApp(url) {
+      // Create an iframe element
+      var iframe = document.createElement("iframe");
+
+      // Set iframe attributes
+      iframe.src = url;
+      iframe.width = "100%";
+      iframe.height = "800";
+      iframe.frameBorder = "0";
+      iframe.style.border = "0";
+      iframe.allowFullscreen = true;
+
+      // Append the iframe to the container div
+      var container = document.getElementById("experienceBuilderContainer");
+      container.appendChild(iframe);
+    }
+
+    // Call the function with the Experience Builder app URL
+    loadExperienceBuilderApp("https://experience.arcgis.com/experience/e78cc5a2b3a447e5870ee5f3f6f9c6cd");
+
+  }); // Added closing brace and parenthesis here
+</script>
+
+       
+          
     </head>
     <body>
         <nav class="navbar">
@@ -108,27 +132,27 @@
           <div class = "mainbox"> 
           <div class = "sectionboxone">
           <div class = "paragraphbox"> 
-          <h5 class="h5text">Network Analysis</h5>
+          <!-- <h5 class="h5text">Network Analysis</h5> -->
+          <div id="experienceBuilderContainer"></div>
+
           <div  class = "quoteboxteam"> 
-            <img class="pastprojects" src="images/LayoutNetworking1_edited.jpg" alt="NetworkAnalysisLayout"> 
+            <!-- <img class="pastprojects" src="images/LayoutNetworking1_edited.jpg" alt="NetworkAnalysisLayout"> 
           </div>
           <div class="subtitles2"><p><em><strong>Response of Ambulance Services to Overdose Incidents in Shelters</strong></em></p></div>
           <div class="subtitles2"><p><em><strong>Toronto, Ontario, Canada</strong></em></p></div>
           <div class="Slinkdiv2">
-            <a class="SLink2" href="images/LayoutNetworking1.jpg">Full-Size</a> 
+            <a class="SLink2" href="images/LayoutNetworking1.jpg">Full-Size</a>  -->
           </div>  
       
-            <p><h5 class="h5text">Project Goals</h5>	
+            <p><h5 class="h5text">Assessment Goals</h5>	
               <ul>
-              <li>Build a topologically valid Geodatabase.</li>
-              <li>Create a Map Book to facilitate QA and correction of Topology.</li>
-              <li>Perform a series of 'Network Analysis' techniques (Closest Facility Analysis, Service Area 
-                Analysis and Vehicle Routing Problem) to support routing for a Municipal Department that 
-                provides services.</li>
-              <li>Create a Feature Datasets with appropriate Feature Classes to perform network analysis.</li>
-              <li>Update attributes to facilitate a network analysis</li>
-              <li> Create a Network Dataset.</li>
-              <li>Create a Feature Dataset with appropriate Feature Classes to perform network analysis.</li>
+              <li>Content.</li>
+              <li>Content.</li>
+              <li>Content.</li>
+              <li>Content.</li>
+              <li>Content</li>
+              <li> Content.</li>
+              <li>Content.</li>
             </ul>
             </p> 
           </div>
@@ -143,26 +167,25 @@
           <div class = "mainbox"> 
           <div class = "sectionboxone">
           <div class = "paragraphbox"> 
-          <h5 class="h5text">Terrain Mapping and Analysis of Bank Swallow Habitat</h5>
+          <h5 class="h5text">Assessment Outcomes</h5>
           <div  class = "quoteboxteam"> 
-            <img class="pastprojects" src="images/BankLayout_edited800.jpg" alt="Bank Swallow Habitat"> 
+            <!-- <img class="pastprojects" src="images/BankLayout_edited800.jpg" alt="Bank Swallow Habitat">  -->
           </div>
           
-          <div class="subtitles2"><p><em><strong>Peterborough, Ontario, Canada</strong></em></p></div>
+          <div class="subtitles2"><p><em><strong>Subtitle Here</strong></em></p></div>
           <div class="Slinkdiv2">
-            <a class="SLink2" href="images/BankLayout.jpg">Full-Size</a> 
+            <!-- <a class="SLink2" href="images/BankLayout.jpg">Full-Size</a>  -->
           </div>  
-          <div class="Subsubtitles"><p><em><strong>DEM:</strong></em> Contour lines were converted to points using the 'Feature Vertices to Point' tool and combined with Elevation point data. Using this data a 20-meter DEM was created using Topo to Raster interpolation tool (Spatial Analyst Toolbox). A Hillshade layer was then created using the DEM to visually enhance the topography of the area. A Basemap was then created by layering the DEM & Hillshade.</p>
+          <div class="Subsubtitles"><p><em><strong>Header</strong></em> Content Here.</p>
            </div>
-           <div class="Subsubtitles"><p><em><strong>Spatial Analysis:</strong></em> A Triangulated Irregular Network (TIN) model was created using the same contour and elevation point data. This model was appropriate to use given the analysis requirements involving the evaluation of steep slopes. Surface Slope and Aspect were produced using the TIN. Soil, Aspect, and Slope converted using ‘Feature to Raster’. Rasters were reclassified to habitat requirements. Raster Calculator was then used to extract nesting habitat requirements available in the study area. ‘Raster to Polygon’ converted the output to a vector layer. Zonal Geometry was then used to calculate total habitat availability.</p>
+           <div class="Subsubtitles"><p><em><strong>Header Here:</strong></em> Content.</p>
            </div> 
            <div class="Subsubtitles"><p><em><strong>Nesting Habitat Requirements:</strong></em><ul class="banklist">
-            <li> Aspect is not Southerly or Flat</li>
-            <li> Slope is  ≥  25°</li>
-            <li> Soil = Silty fine sands</li></ul></p>
+            <li> Content</li>
+            <li> Content</li>
+            <li> Content</li></ul></p>
            </div> 
-           <div class="Subsubtitles"><p><em><strong>Bank Swallow (Riparia riparia):</strong></em> The Bank Swallow (<em>Riparia riparia</em>) is designated as a threatened species by The Committee on the Status of Endangered Wildlife in Canada (COSEWIC) since May 2013. As of 2017, it was also listed as a threatened species in schedule 1 of the Species at Risk Act (SARA), and a recovery strategy has been proposed as of 2021 by the government of Canada.
-            This widespread species has seen a long-term population decline amounting to a loss of 98% of its Canadian population, over a 40-year period. Cumulative effects of several threats include the loss of breeding and foraging habitat, destruction of nests during aggregate excavation, and pesticide use affecting prey abundance. The most limiting habitat requirement for nesting Bank Swallows is the availability of eroding, vertical banks compose of unconsolidated substrates (e.g., silty fine sands). Substrate penetrability and the varying proportions of substrate particle sizes are important for burrowing. Nest burrows are nearly always in a near-vertical bank (76-105°). Breeding habitats include the following: lake and ocean bluffs; stream and river banks; sand and gravel pits; roadcuts; and piles of sand, topsoil, sawdust, coal ash, and other materials.
+           <div class="Subsubtitles"><p><em><strong>Content:</strong></em> Content.
           </p>
            </div>
           
