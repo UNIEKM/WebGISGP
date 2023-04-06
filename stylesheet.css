@@ -1,7 +1,7 @@
 /*CSS completed by Kevin Van Dijk
 Modified from my portfolio website
-Which was modified from Web Design
-and Programming Project Semester 1.
+and GEOM101 Project Semester 1.
+2023-04-05
 */
 
 
@@ -59,6 +59,7 @@ body, html {
   letter-spacing: 2px;
   font-size: 17px;
   margin-right: 2%;
+  line-height: 24px;
 }
 .navlist .list_item {
   display: inline-block;
@@ -71,7 +72,7 @@ body, html {
 .navbar a:hover {
   color:  #0B0909; 
   transition: all 0.5s;
-  text-decoration: underline;
+  text-decoration:none;
 }
 .navlist a.active {
   color:  #0B0909; 
@@ -110,13 +111,17 @@ ul.sub_drop {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   display: none;
   margin: 0;
-  padding: 0;
+  padding-top: 5px;
   z-index: 1;
 }
 ul.sub_drop li:first-child {
-  margin-top: -10px;
+  margin-top: 0;
 }
 ul.sub_drop li > a:hover {
+  background-color: darkslategrey;
+  color: #fff;
+}
+ul.sub_drop li > a.StoryMaps:hover {
   background-color: darkslategrey;
   color: #fff;
 }
@@ -126,21 +131,23 @@ ul.sub_drop li a {
   text-align: center;
   color: #333;
   font-size: 14px;
-  padding: 10px 20px;
+  padding: 5px 15px;
+}
+ul.sub_drop li a.StoryMaps {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 ul.sub_drop li:not(:last-child) {
   border-bottom: 1px solid #eee;
 }
 /* Add a dropdown arrow to the Projects menu item */
 ul.navbar li:nth-child(3)::after {
-  content: "\25BC";
-  display: inline-block;
-  margin-left: 5px;
-  color: #e0ebeb;
-}
-/* Add a dropdown arrow to the parent menu items */
-ul.navbar li::after {
-  content: "\25BC";
+  content: "\25BC"; /*down-pointing triangle*/
   display: inline-block;
   margin-left: 5px;
   color: #e0ebeb;
@@ -149,6 +156,8 @@ ul.navbar li::after {
 ul.navbar li:hover > ul.sub_drop {
   display: block;
 }
+
+
 /*End NavBar Section*/
 
 
