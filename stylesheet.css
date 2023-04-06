@@ -217,7 +217,7 @@ h5 { /* Inner Heading */
   padding-bottom: 1%;
   padding-top: 1%; 
 }
-h6 { /* Heading - Specific use for main page*/
+h6 { /* Heading - Main page Bold Paragraph Titles*/
   color: #0B0909;
   font-size: 40px;
   letter-spacing: -0.7mm;
@@ -226,17 +226,6 @@ h6 { /* Heading - Specific use for main page*/
 }
 /*End Header Text Section*/
 
-
-
-/* .subtitles2 {
-  margin-top: 1px;
-	margin: 1px;
-  padding-top: 1px;
-  padding-bottom: 1px; 
-}
-.subtitles {
-  padding-bottom: 2%;
-} */
 
 
 
@@ -259,15 +248,24 @@ h6 { /* Heading - Specific use for main page*/
   color: whitesmoke;
   padding-top: 10px; 
 }
-
 .header-image-subtitle {
   font-size: 30px;
   text-align: center;
   color: whitesmoke; 
 }
-/*End Header Image Section*?
+/*End Header Image Section*/
 
 
+/* Homepage Subtext Start */
+.hometext{
+	font-size: 20px; 
+	font-family: 'Segoe UI', Tahoma, Verdana, sans-serif, sans-serif; 
+	color: #0B0909;
+	line-height: 155%; /* add spaces between rows of text for readability */
+  text-align:center;
+  padding-bottom: 3%;
+}
+/* Homepage Subtext End */
 
 
 /*This section is the three images that link to other pages on home page*/
@@ -279,7 +277,6 @@ h6 { /* Heading - Specific use for main page*/
   display: table;
   clear: both; /* Clearing the style before and after the container */
 }
-
 .project-container {
   padding: 0.16px 16px;
   margin-bottom: 16px;
@@ -290,7 +287,6 @@ h6 { /* Heading - Specific use for main page*/
   flex-wrap: wrap;
   padding: 0 8px;
 }
-
 .project-fourth {
   /* Creating three floating project images */
   float: left;
@@ -298,12 +294,10 @@ h6 { /* Heading - Specific use for main page*/
   padding: 0 8px;
   box-sizing: border-box;
 }
-
 /*Boxes on image links main page*/
 .project-display-container {
   position: relative;
 }
-
 .project-display-textbox {
   position: absolute;
   left: 0;
@@ -313,17 +307,14 @@ h6 { /* Heading - Specific use for main page*/
   background-color: #0B0909;
   padding: 8px 16px;
 }
-
 .project-image img {
   width: 100%;
   border: 2px solid #000; /* Adding black border */
 }
-
 .project-image:hover {
   /* When the user hovers over the project image, the opacity is lowered */
   opacity: 0.7;
 }
-
 /*End of linked images section on home page*/
 
 
@@ -334,162 +325,18 @@ h6 { /* Heading - Specific use for main page*/
 
 
 
-/*Edit This Section*/
-
-.h2text {
-  margin-left: 70px;
-  margin-top: 35px;
-  padding-bottom: 1%;
-}
-.centerGrid { /* to format text in grid  */
-  margin: auto;
-  max-width: 80%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-.row { /* to format headings alone */
-  margin-left: 75px;
-  margin-right: 75px;
-}
-/* Clear floats appearing after */
-.row:after {
-  content: "";      /* used with :after, in this case, inserts empty str */
-  display: block;   /* :after item behaves like block */
-  clear: both;      /* clears area from other floating elements - both side	*/
-}
-
-.grid-container {
-  display: grid;
-  grid-auto-flow: column; /* makes behaviour like flexbox */
-  grid-auto-columns: 1fr;
-  gap: 1em;
-}
-.grid-container > div { /* for use in div */
-  background-color: #EBF5EE; 
-  text-align: center;
-  margin: 30px;
-  padding: 20px;
-  box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2); /* colour transparency is the last parameter */
-}
-.grid-container2 { /* Another version for 'Why choose us' section */
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-auto-flow: column; /*makes behaviour like flexbox*/
-  gap: 1em;
-}
-.grid-container2 > div {
-  background-color: #ffffff;
-  text-align: center;
-  margin: 20px;
-  padding: 20px;
-}
-
-body {
-	margin:0;
-	padding:0;
-}
-
-.topbox{
-	padding-right: 15%;
-	padding-left: 15%;
-	padding-bottom: 1%;
-	padding-top: 1%;
-	text-align: center;
-	font-size: 20px; 
-	font-family: Verdana, sans-serif;
-	color: #44444C;
-	background-color: #D6D6D6; 
-}
-.topbox2{
-	padding-right: 15%;
-	padding-left: 15%;
-	padding-bottom: 1%;
-	padding-top: 1%;
-	color: none;
-	background-color: none; 
-}
-
-.sectionbox{
-	background-color: #EBF5EE; /* background colour will be changed when colours are chosen */
-	padding-right: 15%;
-	padding-left: 15%;
-	padding-bottom: 5%;
-	padding-top: 5%;
-	
-}
-
-.sectionboxone{
-	display: flex; /* make it so the text boxes can stack if screen is smaller */
-	flex-direction: row;
-	background-color: white;
-	padding-right: 15%;
-	padding-left: 15%;
-	padding-bottom: 5%;
-	padding-top: 1%;
-	
-}
-
-.sectionboxtwo{
-	display: flex;
-	flex-direction: row;
-	background-color: #D6D6D6; /* background colour will be changed when colours are chosen */
-	padding-right: 15%;
-	padding-left: 15%;
-	padding-bottom: 5%;
-	padding-top: 1%;
-	
-}
-
-/* for other pages the quote box will be swapped for images that will be contained in the section boxes */
-.quotebox{
-	padding: 3px; /* quote box has different padding levels to make it left justified from center */
-	flex: 25%;
-	font-size: 25px; 
-	font-style: italic;
-	font-family: Verdana, sans-serif;
-	color: #18314F;
-	font-style: italic;
-	line-height: 155%;
-} 
 
 
 
 
-/* Homepage formatting for paragraph */
-.hometext{
-	font-size: 20px; 
-	font-family: 'Segoe UI', Tahoma, Verdana, sans-serif, sans-serif; 
-	color: #0B0909;
-	line-height: 155%; /* add spaces between rows of text for readability */
-  text-align:center;
-  padding-bottom: 3%;
-}
-.sectionboxoneprojects{
-	display: flex; /* make it so the text boxes can stack if screen is smaller */
-	flex-direction: row;
-	background-color: white;
-	padding:5%;
-}
-.quoteboxprojects{
-	padding: 3px; /* quote box has different padding levels to make it left justified from center */
-	flex: 25%;
-} 
-.paragraphboxprojects{
-	padding-left: 2%;
-	padding-right: 2%;
-	flex: 75%;
-	font-size: 20px; 
-	font-family: Verdana, sans-serif; 
-	color: gray;
-	line-height: 155%; /* add spaces between rows of text for readability */
-}
-.pastprojects{
-  border: 4px solid #44444C;
-  max-width: 800px;
-  max-height: 618px;
-  /* align-items: center; */
-}
+
+
+
+
+
+
+
+
 
 
 
