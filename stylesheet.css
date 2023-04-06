@@ -66,6 +66,7 @@ body, html {
 .navbar a {
   color:#0B0909;  
   text-decoration: none;
+  font-size: 14px;
 }
 .navbar a:hover {
   color:  #0B0909; 
@@ -86,10 +87,10 @@ body, html {
   color: #44444C; 
   text-decoration: none;
   letter-spacing: 2px;
-  font-size: 23px;
+  font-size: 16px;
   font-weight:normal;
   display: inline-block; 
-  padding: 0 20px 10px 20px; 
+  padding: 5px 20px 10px 20px; 
   vertical-align: middle; 
 }
 .menu_bar {
