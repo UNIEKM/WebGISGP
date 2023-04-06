@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5, h6 { /* Default for all hn */
 h1 { /* Main Page Heading */
   padding-top: 50px; 
 	margin-left: 5px;
-	font-size: 70pt;
+	font-size: 55pt;
 }
 h2 { /* Heading for non-main pages */
 	font-size: 50px;
