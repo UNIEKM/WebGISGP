@@ -3,8 +3,6 @@ Modified from my portfolio website
 and GEOM101 Project Semester 1.
 2023-04-05
 */
-
-
 * {									
 	box-sizing: border-box;			/* Width and height calculations will include padding and borders */
 	margin: 0;						      /* Overrides defaults and sets the margin of the entire page to 0 */
@@ -327,11 +325,146 @@ h6 { /* Heading - Main page Bold Paragraph Titles*/
 /*End of linked images section on home page*/
 
 
+/*Media Screen Start*/
+/* Responsive design for h1, .grid-container - shifts to a stacking arrangement when screen size passes limit */
+@media screen and (max-width: 1150px) {
+  .h1text {
+    font-size: 8vw; /* font unit vw for responsive design */
+  }
+  .grid-container {
+    grid-auto-flow: row; /* change orientation of the boxes */
+  }
+  .grid-container2 {
+    grid-auto-flow: row; /* change orientation of the boxes */
+    gap: 20px;
+  }
+}
+/* Responsive design for h2 */
+@media screen and (max-width: 1000px) {
+  .h2text {
+    margin-left: 30px;
+    padding: 0%;
+  }
+}
 
+@media all and (max-width:960px) {
+  .navbar {
+    flex-direction: column;
+    position: relative;
+    transition: ease-in-out 0.4s;
+  }
+  .navbar a.CompanyName {
+    flex-direction: column;
+    position: relative;
+    transition: ease-in-out 0.4s;
+    font-size: x-small;
+  }
+  ul.sub_drop {
+    position:sticky;
+    width:fit-content;
+    background-color: #44444C;
+    display: none;
+    margin-top: 25px;
+    margin-left: auto; /*Auto adjust drop list to center when screen size changes*/
+    margin-right: auto;
+  }
+  ul.sub_drop li:first-child{ /*Sets position of first drop down link*/
+    margin-top: -10px;
+  }
+  
+  ul.sub_drop li > a:hover {
+   border: none;
+   color: #5dacbd;
+   transition: 0.5s;
+  }
+  ul.sub_drop li a {
+    text-decoration: none;
+    display:flex;
+    text-align: center;
+    color: #e0ebeb;
+    font-size: small;
+    padding-left: 20%;
+    padding-right: 20%;
+   }
+  ul.sub_drop li a.StoryMaps {
+    text-decoration: none;
+    display:flex;
+    text-align: center;
+    color: #e0ebeb;
+    font-size: small;
+    padding-left: 31%;
+    padding-right: 31%;
+   }
+  .menuicon {
+    display: block;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+  } 
+  .navlist {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 6px;
+    display: none;/*Hide nav list items*/
+  }
+  .navlist .list_item {/*Want to add transition for menu drop down*/
+    display: block;
+    padding: 8px 4px;
+    text-align: center;
+    padding-top:8px;
+  }
+  .navbar .GeomSolutions {/*Align name/logo left*/
+    width: 100%;
+    margin-left: 8px;
+    margin-top: 8px;
+  }
+  .active { /*Active class for JavaScript to bring our list back once icon is clicked*/
+    display: block
+  }
+  .header-image-subtitle {
+    font-size:medium;
+  }
+  .project-display-textbox {
+    display: none;
+  }
+  .project-fourth {
+    width: 33.333%;
+  }
+  .project-display-textbox {
+    padding: 6px 12px;
+  }
+}
 
+@media (min-width:801px) {    /* Adding responsive design to the images */
+  .project-fourth {
+    width:25%;
+  }
+}
+/* Responsive design for headings and their margins for smaller screen size */
+@media screen and (max-width: 600px) {
+  .row {
+	  margin-left: 40px;
+    margin-right: 40px;
+  }
+  .h2text {
+	  font-size: 40px;  
+	  margin-top: 40px;
+  }
+  .h3text {
+    font-size: 30px;
+	  margin: 30px;
+  }
+  .h4text {
+    font-size: 30px;
+    margin: 30px;
+  }
+  .h6text {
+    font-size: 30px;
+  }
+}
 
-
-
+/*Media Screen End*/
 
 
 
