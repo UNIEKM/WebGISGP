@@ -342,8 +342,8 @@ h6 { /* Heading - Main page Bold Paragraph Titles*/
 	padding-left: 15%;
 	padding-bottom: 1%;
 	padding-top: 1%;
-	color: none;
-	background-color: none; 
+	/* color: none;
+	background-color: none;  */
 }
 .sectionbox{
 	background-color: #EBF5EE; /* background colour will be changed when colours are chosen */
