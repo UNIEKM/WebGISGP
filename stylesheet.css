@@ -305,6 +305,7 @@ h6 { /* Heading - Main page Bold Paragraph Titles*/
 /*Boxes on image links main page*/
 .project-display-container {
   position: relative;
+  
 }
 .project-display-textbox {
   position: absolute;
