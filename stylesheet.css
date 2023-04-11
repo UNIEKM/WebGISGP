@@ -391,6 +391,66 @@ h6 { /* Heading - Main page Bold Paragraph Titles*/
 	color: #44444C;
 	line-height: 155%; /* add spaces between rows of text for readability */
 }
+/* Main Content */
+.row {
+  margin: 2rem 0;
+}
+
+.mainbox {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.padpast {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.sectionboxtwoteam {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.quoteboxteam {
+  text-align: center;
+}
+
+.pastprojects {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.paragraphboxteam {
+  text-align: justify;
+}
+
+.FireMap {
+  margin-top: 1rem;
+}
+
+.FireMapSourceLink {
+  color: blue;
+  text-decoration: underline;
+}
+
+.Firebox {
+  border-top: 1px solid #333;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.FireMapSource1 {
+  font-weight: bold;
+}
+.SubP_Spacing {
+  padding-top: 2%;
+}
+
+
 /*Alernate Pages CSS End*/
 
 
