@@ -631,10 +631,114 @@ h6 { /* Heading - Main page Bold Paragraph Titles*/
 .table-custom td.list-td {
   vertical-align: top;
 }
-
-
-
 /*End solutions page Bootstrap table*/
+
+/*Media Screen Design Solutions page Bootstrap table*/
+/* Extra Small Devices (portrait phones) */
+.table-custom {
+  border-collapse: separate;
+  border-spacing: 0 0.5rem;
+}
+.table-custom thead th {
+  background-color: #3a3f48;
+  color: #ffffff;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+.table-custom tbody td {
+  background-color: #f4f4f4;
+  color: #333333;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+.table-custom tbody th {
+  background-color: #28a745;
+  color: #ffffff;
+}
+.list-td {
+  padding: 0;
+}
+.list-td ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list-td li {
+  padding-left: 1.2em;
+  position: relative;
+}
+.list-td li:before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+}
+.table-custom td.list-td {
+  vertical-align: top;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .table-custom {
+    font-size: 0.8rem;
+  }
+  .table-custom thead th {
+    padding: 0.75rem 1rem;
+  }
+  .table-custom tbody td {
+    padding: 0.75rem 1rem;
+  }
+  .list-td li {
+    padding-left: 1.5em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .table-custom {
+    font-size: 0.9rem;
+  }
+  .table-custom thead th {
+    padding: 0.75rem 1.5rem;
+  }
+  .table-custom tbody td {
+    padding: 0.75rem 1.5rem;
+  }
+  .list-td li {
+    padding-left: 1.8em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .table-custom {
+    font-size: 1rem;
+  }
+  .table-custom thead th {
+    padding: 1rem 2rem;
+  }
+  .table-custom tbody td {
+    padding: 1rem 2rem;
+  }
+  .list-td li {
+    padding-left: 2em;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .table-custom {
+    font-size: 1.1rem;
+  }
+  .table-custom thead th {
+    padding: 1rem 2.5rem;
+  }
+  .table-custom tbody td {
+    padding: 1rem 2.5rem;
+  }
+  .list-td li {
+    padding-left: 2.5em;
+  }
+}
+/*END Media Screen Design Solutions page Bootstrap table*/
 
 
 
