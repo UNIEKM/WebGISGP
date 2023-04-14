@@ -585,6 +585,35 @@ h6 { /* Heading - Main page Bold Paragraph Titles*/
 /*Media Screen End*/
 
 /*Solutions page Bootstrap table*/
+.table-custom {
+  border-collapse: separate;
+  border-spacing: 0 0.5rem;
+}
+.table-custom thead th {
+  background-color: #3a3f48;
+  color: #ffffff;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+.table-custom tbody tr:hover {
+  background-color: rgba(58, 63, 72, 0.15);
+}
+.table-custom tbody td {
+  background-color: #f4f4f4;
+  color: #333333;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+.table-custom tbody th {
+  background-color: #28a745;
+  color: #ffffff;
+}
+/*End solutions page Bootstrap table*/
+
+
+
+
 
 
 
