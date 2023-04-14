@@ -13,7 +13,9 @@ body, html {
   line-height: 1.8;
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif, sans-serif; 
 }
-
+.main {
+  flex: 1;
+}
 
 /*Top Botton Style Section Start*/
 #TopBtn {
@@ -597,7 +599,7 @@ h6 { /* Heading - Main page Bold Paragraph Titles*/
   border-radius: 0.25rem;
 }
 .table-custom tbody tr:hover {
-  background-color: rgba(58, 63, 72, 0.15);
+  background-color: #5a5959;
 }
 .table-custom tbody td {
   background-color: #f4f4f4;
@@ -609,6 +611,9 @@ h6 { /* Heading - Main page Bold Paragraph Titles*/
   background-color: #28a745;
   color: #ffffff;
 }
+
+
+
 /*End solutions page Bootstrap table*/
 
 
