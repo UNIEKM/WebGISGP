@@ -598,9 +598,9 @@ h6 { /* Heading - Main page Bold Paragraph Titles*/
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
 }
-.table-custom tbody tr:hover {
-  background-color: #5a5959;
-}
+/* .table-custom tbody tr:hover {
+  background-color: #5a5959; */
+/* } */
 .table-custom tbody td {
   background-color: #f4f4f4;
   color: #333333;
@@ -610,6 +610,26 @@ h6 { /* Heading - Main page Bold Paragraph Titles*/
 .table-custom tbody th {
   background-color: #28a745;
   color: #ffffff;
+}
+.list-td {
+  padding: 0;
+}
+.list-td ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list-td li {
+  padding-left: 1.2em;
+  position: relative;
+}
+.list-td li:before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+}
+.table-custom td.list-td {
+  vertical-align: top;
 }
 
 
